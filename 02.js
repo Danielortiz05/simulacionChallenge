@@ -12,6 +12,14 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  // let stringMasLargo = strings[0]
+  // for(let i = 0; i<strings.lenght; i++){
+  //   if (strings[i].lenght > stringMasLargo.lenght){
+  //     stringMasLargo = strings[i];
+  //   }
+  // }
+  return strings.reduce((acumulador, valorActual)=> valorActual.length > acumulador.length ? valorActual:acumulador)
+ 
 }
 
 // No modifiques nada debajo de esta linea //
